@@ -6,7 +6,7 @@ const Historico: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulação de carregamento de histórico de serviços (substitua isso com a lógica real)
+    
     setTimeout(() => {
       const dadosHistorico = [
         {
@@ -27,12 +27,12 @@ const Historico: React.FC = () => {
           data: '2023-10-17',
           hora: '3:00 PM',
         },
-        // Adicione mais agendamentos aqui
+        
       ];
 
       setHistorico(dadosHistorico);
       setLoading(false);
-    }, 2000); // Simula uma carga de 2 segundos
+    }, 2000);
   }, []);
 
   const servicosPorEstabelecimento = {};
